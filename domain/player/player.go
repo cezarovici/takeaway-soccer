@@ -1,8 +1,12 @@
 package player
 
-import "time"
+import (
+	"time"
 
-type player struct {
+	"github.com/cezarovici/takeaway-soccer/helpers"
+)
+
+type Player struct {
 	id       int
 	goals    int
 	name     string
@@ -10,10 +14,11 @@ type player struct {
 	presence []time.Time
 }
 
-var players []player
+var players []Player
 
-func newPlayer(name string) *player {
-	return &player{
-		name: name,
+func newPlayer(name string) *Player {
+	return &Player{
+		name:     name,
+		photoUrl: helpers.ConvertNameToPhotoUrl(name),
 	}
 }
