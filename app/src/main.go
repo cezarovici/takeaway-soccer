@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/gofiber/fiber"
+)
 
 func main() {
-	fmt.Print("Hello App")
+	app := fiber.New()
+	app.Static("/", "../service/templates")
+
+	log.Fatal(app.Listen(":3000"))
 }

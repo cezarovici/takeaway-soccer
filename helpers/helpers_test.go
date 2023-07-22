@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestConvertToPhotoUrl(t *testing.T) {
+func TestConvertNameToPhotoUrl(t *testing.T) {
 	type testCase struct {
 		test      string
 		inputName string
