@@ -1,372 +1,448 @@
 [
   {
+
     "nume": "Adam Catalin",
-    "nota": "7,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Agache Bogdan",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Agavriloaie Alexandru",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Albu Mihai",
-    "nota": "",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Antochi Cipiran",
-    "nota": "6,5",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Antochi Teo",
-    "nota": "7,5",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Antonescu Daniel",
-    "nota": 6,
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Apetroaei Catalin",
-    "nota": "6,2",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Apetroaei Cezar",
-    "nota": "7,5",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Atasiei Daniel",
-    "nota": "6,7",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bahnaru George",
-    "nota": 7,
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Besliu Alexandru",
-    "nota": "6,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Birlidiu Costel",
-    "nota": "",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Borcut Catalin",
-    "nota": "4,7"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bucataru Florin",
-    "nota": "7,3",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bucataru Silviu",
-    "nota": "6,2",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Budean Ianis",
-    "nota": 5
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Budean Razvan",
-    "nota": "6,9"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Buha Sorin",
-    "nota": "6,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bulgaru Vlad",
-    "nota": "7,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bunduc Paul",
-    "nota": 6
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bursuc Gabriel",
-    "nota": "6,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Bursuc Valentin",
-    "nota": "7,2",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Cenusa Andrei",
-    "nota": "7,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Chirica Vlad",
-    "nota": "6,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Cical Adrian",
-    "nota": "6,9",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Ciobanu Ciprian",
-    "nota": "7,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Ciobanu Stefan",
-    "nota": "7,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Ciubotariu Razvan",
-    "nota": "7,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Ciubotaru Emi",
-    "nota": "7,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Cobzariu Stefan",
-    "nota": 6
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Comaceanu Codrin",
-    "nota": "5,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Corduneanu Liviu",
-    "nota": "6,5",
-    "prezenta": 1
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Cuciureanu Eduard",
-    "nota": "6,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Cuibus Teo",
-    "nota": "7,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Deloiu Florin",
-    "nota": "6,9"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Dima Bogdan",
-    "nota": "6,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Drinceanu Danut",
-    "nota": "7,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Enache Silviu",
-    "nota": "6,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Faifer Andrei",
-    "nota": "6,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Fanaragiu Andrei",
-    "nota": "6,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Fartusnic Robertinni",
-    "nota": "7,7"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Francu Denis",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Galusca Dan",
-    "nota": "6,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Ghetiu Andrei",
-    "nota": "6,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Gologan Gabi",
-    "nota": "6,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Haras Vlad",
-    "nota": "7,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Iacob George",
-    "nota": "5,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Iorgoaia Catalin",
-    "nota": 6
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "JR Gabi",
-    "nota": 6
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Khawly Theo",
-    "nota": "7,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Khoder Hadi",
-    "nota": "7,1"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Laurentiu Marius Gica",
-    "nota": "7,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Loghin Ionut",
-    "nota": "7,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Luca Alexandru (chivu)",
-    "nota": "7,9"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Lupascu Liviu",
-    "nota": "6,9"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Marian Florea",
-    "nota": "7,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Metler Cristi",
-    "nota": "6,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Mihaies Bogdan",
-    "nota": 8.3
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Miron Grigore",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Nedelcu Raul",
-    "nota": "7,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Nistor Alexandru",
-    "nota": "6,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Olaru Marian",
-    "nota": "7,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Onofrei Tudor",
-    "nota": "6,1"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "ONU Vlad",
-    "nota": "7,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Orzu Andrei",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Patras Claudiu",
-    "nota": "6,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Petrei Geo",
-    "nota": "6,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Petrei Misu",
-    "nota": "6,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Pintilie Vlad",
-    "nota": "7,2"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Popovici Alexandru",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Pulpan Darian Marius",
-    "nota": "7,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Rusu Alin",
-    "nota": "6,9"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Rusu Stefan",
-    "nota": "6,6"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Sanduleanu Alin",
-    "nota": "6,1"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Simcic Dima",
-    "nota": "7,1"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Spanu Alin",
-    "nota": "6,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Spătaru Andrei",
-    "nota": "6,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Stativa Andrei",
-    "nota": "7,5"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Tapciuc Alexandru",
-    "nota": "6,3"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Tiba Dragos",
-    "nota": "7,8"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Valentin George",
-    "nota": "6,4"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Victor Foxx",
-    "nota": 6
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Vieriu Tudor",
-    "nota": 8
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Vieru Andrei",
-    "nota": "6,7"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Vieru Dragos",
-    "nota": 8
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Vreme Cosmin",
-    "nota": 7
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Zaharia Stefan",
-    "nota": "7,7"
+    "prezente": 0,
+    "goluri": 0
   },
   {
     "nume": "Zamfir Sebi",
-    "nota": "7,00"
+    "prezente": 0,
+    "goluri": 0
   }
 ]

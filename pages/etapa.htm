@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font: 16px Arial;
+            }
+
+            /*the container must be positioned relative:*/
+            .autocomplete {
+                position: relative;
+                display: inline-block;
+            }
+
+            h3 {
+                color: black;
+                text-align: left;
+                font-size: 30px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td {
+                border: 2px solid transparent;
+                padding: 10px;
+                text-align: center;
+                display: center;
+                color: black;
+                width: 20%;
+                height: 40px;
+            }
+
+            .autocomplete-items {
+                position: absolute;
+                border: 1px solid #d4d4d4;
+                border-bottom: none;
+                border-top: none;
+                z-index: 99;
+                /*position the autocomplete items to be the same width as the container:*/
+                top: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            .autocomplete-items div {
+                padding: 10px;
+                cursor: pointer;
+                background-color: #fff;
+                border-bottom: 1px solid #d4d4d4;
+            }
+
+            /*when hovering an item:*/
+            .autocomplete-items div:hover {
+                background-color: #e9e9e9;
+            }
+
+            /*when navigating through the items using the arrow keys:*/
+            .autocomplete-active {
+                background-color: DodgerBlue !important;
+                color: #ffffff;
+            }
+
+            td[class="grey"] {
+                background-color: lightgrey;
+            }
+
+            td[class="blue"] {
+                background-color: DodgerBlue;
+            }
+
+            td[class="orange"] {
+                background-color: orange;
+            }
+
+            td[class="green"] {
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+
+        <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="jucatori.htm">Jucatori</a>
+                        </li>
+                        <a class="nav-link" href="etape.htm">Etape</a>
+                        </li>
+                        </form>
+                </div>
+            </div>
+
+        </nav>
+
+        <h1>Informatii etapa</h1>
+        <form id="tournamentForm">
+            <label for="stageNumber">Stage Number:</label>
+            <input type="date" id="stageNumber" name="stageNumber" required><br>
+
+            <br><br>
+
+            <h1>Players</h1>
+            <div class="autocomplete" style="width:300px;">
+                <input id="selectPlayer" type="text" placeholder="Player Name">
+            </div>
+        </form>
+
+        <button id="insertButton">Insert Value</button>
+
+        <br><br>
+        <br><br>
+
+        <table id="teams">
+            <tr>
+                <th>Team Grey</th>
+                <th>Team Orange</th>
+                <th>Team Green</th>
+                <th>Team Blue</th>
+            </tr>
+            <tr>
+                <td class="grey"> </td>
+                <td class="orange"></td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+            <tr>
+                <td class="grey"></td>
+                <td class="orange"></td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+            <tr>
+                <td class="grey"> </td>
+                <td class="orange"> </td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+            <tr>
+                <td class="grey"> </td>
+                <td class="orange"> </td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+            <tr>
+                <td class="grey"> </td>
+                <td class="orange"> </td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+            <tr>
+                <td class="grey"> </td>
+                <td class="orange"> </td>
+                <td class="green"> </td>
+                <td class="blue"> </td>
+            </tr>
+        </table>
+
+
+    </body>
+
+</html>

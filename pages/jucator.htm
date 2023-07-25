@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagina jucatorului X</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+
+        <style>
+            body{
+                background-image: url('../photos/card-background.jpg')
+            }
+            .col {
+                text-align: right;
+                margin: auto
+            }
+
+            .col[name="atributes"] {
+                text-align: left;
+            }
+
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                box-shadow: 0 0 20px rgba(69, 62, 62, 0.15);
+                width: 50%;
+                margin: auto;
+            }
+
+            .styled-table thead tr {
+                background-color: #0f0505;
+                color: #ffffff;
+                text-align: left;
+                width: fit-content;
+            }
+
+            th,
+            td {
+                text-align: center;
+                border: 2px solid;
+                width: fit-content;
+                color: floralwhite;
+            }
+
+            h1,h2 {
+                color: #ffffff;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jucatorul X</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.htm">Home</a>
+                        </li>
+                        <a class="nav-link" href="etape.htm">Etape</a>
+                        </li>
+                        </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="text-center">
+                <h1>Player Name Here</h1>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="profile">
+                        <img src="..." alt="Not Found" onerror="this.src='../photos/default-user.png'" />
+                    </div>
+                </div>
+                <div class="col" name="atributes">
+                    <h2>Prezente: </h2>
+                    <h2>Goluri: </h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Locul</th>
+                            <th>Numar</th>
+                            <th>Consecutive</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td> </td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td> </td>
+                            <td></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
