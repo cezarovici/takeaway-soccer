@@ -1,0 +1,448 @@
+[
+  {
+
+    "nume": "Adam Catalin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Agache Bogdan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Agavriloaie Alexandru",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Albu Mihai",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Antochi Cipiran",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Antochi Teo",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Antonescu Daniel",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Apetroaei Catalin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Apetroaei Cezar",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Atasiei Daniel",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bahnaru George",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Besliu Alexandru",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Birlidiu Costel",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Borcut Catalin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bucataru Florin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bucataru Silviu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Budean Ianis",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Budean Razvan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Buha Sorin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bulgaru Vlad",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bunduc Paul",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bursuc Gabriel",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Bursuc Valentin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Cenusa Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Chirica Vlad",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Cical Adrian",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Ciobanu Ciprian",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Ciobanu Stefan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Ciubotariu Razvan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Ciubotaru Emi",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Cobzariu Stefan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Comaceanu Codrin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Corduneanu Liviu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Cuciureanu Eduard",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Cuibus Teo",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Deloiu Florin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Dima Bogdan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Drinceanu Danut",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Enache Silviu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Faifer Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Fanaragiu Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Fartusnic Robertinni",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Francu Denis",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Galusca Dan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Ghetiu Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Gologan Gabi",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Haras Vlad",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Iacob George",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Iorgoaia Catalin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "JR Gabi",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Khawly Theo",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Khoder Hadi",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Laurentiu Marius Gica",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Loghin Ionut",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Luca Alexandru (chivu)",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Lupascu Liviu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Marian Florea",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Metler Cristi",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Mihaies Bogdan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Miron Grigore",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Nedelcu Raul",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Nistor Alexandru",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Olaru Marian",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Onofrei Tudor",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "ONU Vlad",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Orzu Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Patras Claudiu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Petrei Geo",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Petrei Misu",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Pintilie Vlad",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Popovici Alexandru",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Pulpan Darian Marius",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Rusu Alin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Rusu Stefan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Sanduleanu Alin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Simcic Dima",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Spanu Alin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Spătaru Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Stativa Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Tapciuc Alexandru",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Tiba Dragos",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Valentin George",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Victor Foxx",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Vieriu Tudor",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Vieru Andrei",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Vieru Dragos",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Vreme Cosmin",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Zaharia Stefan",
+    "prezente": 0,
+    "goluri": 0
+  },
+  {
+    "nume": "Zamfir Sebi",
+    "prezente": 0,
+    "goluri": 0
+  }
+]
