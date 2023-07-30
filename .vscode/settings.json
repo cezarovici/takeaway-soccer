@@ -1,3 +1,4 @@
 {
-    "html.format.indentInnerHtml": true
+    "html.format.indentInnerHtml": true,
+    "livePreview.defaultPreviewPath": "/pages/etapa.htm"
 }
