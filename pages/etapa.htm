@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Bootstrap demo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            inteGrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
             crossorigin="anonymous" />
 
         <style>
@@ -24,6 +24,9 @@
                 width: 100%;
             }
 
+            tr {
+                text-align: center;
+            }
 
             td {
                 border: 5px solid transparent;
@@ -142,24 +145,22 @@
                 padding-right: 30px;
             }
 
-
-
-            .verde {
+            .Verde {
                 background-color: rgb(10, 145, 28);
                 -webkit-background-clip: text;
             }
 
-            .portocaliu {
+            .Portocaliu {
                 background-color: rgb(207, 105, 8);
                 -webkit-background-clip: text;
             }
 
-            .albastru {
+            .Albastru {
                 background-color: DodgerBlue;
                 -webkit-background-clip: text;
             }
 
-            .gri {
+            .Gri {
                 background-color: rgb(102, 90, 90);
                 -webkit-background-clip: text;
             }
@@ -172,7 +173,7 @@
 
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            inteGrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
 
 
@@ -191,36 +192,21 @@
                         </li>
                         <a class="nav-link" href="etape.htm">Etape</a>
                         </li>
-                        </form>
                 </div>
             </div>
 
         </nav>
 
         <h1>Informatii etapa</h1>
-        <form id="tournamentForm">
-            <label for="stageNumber">Stage Number:</label>
-            <input type="date" id="stageNumber" name="stageNumber" required><br>
 
-            <br><br>
-
-            <h1>Players</h1>
-            <div class="autocomplete" style="width:300px;">
-                <input id="selectPlayer" type="text" placeholder="Player Name">
-            </div>
-        </form>
-
-        <button id="insertButton">Insert Value</button>
-
-        <br><br>
         <br><br>
 
         <table id="teams">
             <tr>
-                <th>Team Grey</th>
-                <th>Team Orange</th>
-                <th>Team Green</th>
-                <th>Team Blue</th>
+                <th>Gri</th>
+                <th>Portocaliu</th>
+                <th>Verde</th>
+                <th>Albastru</th>
             </tr>
             <tr>
                 <td class="grey"> </td>
@@ -268,11 +254,12 @@
             <h2>Tur</h2>
             <div class="etapa" id="etapa1">
                 <h3>Etapa 1</h3>
+
                 <div class="match" id="match1">
                     <div class="match-info">
                         <div class="left-team-info">
                             <div class="team-name">
-                                <div class="verde">
+                                <div class="Verde">
                                     Verde
                                 </div>
                             </div>
@@ -285,11 +272,11 @@
                             </ul>
                         </div>
 
-                        <strong class="scor">0 - 0</strong>
+                        <strong class="scor"></strong>
 
                         <div class="right-team-info">
                             <div class="team-name">
-                                <div class="portocaliu">
+                                <div class="Portocaliu">
                                     Portocaliu
                                 </div>
                             </div>
@@ -310,7 +297,7 @@
                 <div class="match-info">
                     <div class="left-team-info">
                         <div class="team-name">
-                            <div class="albastru">
+                            <div class="Albastru">
                                 Albastru
                             </div>
                         </div>
@@ -323,11 +310,11 @@
                         </ul>
                     </div>
 
-                    <strong class="scor">0 - 0</strong>
+                    <strong class="scor"></strong>
 
                     <div class="right-team-info">
                         <div class="team-name">
-                            <div class="gri">
+                            <div class="Gri">
                                 Gri
                             </div>
                         </div>
@@ -341,10 +328,7 @@
                     </div>
 
                 </div>
-
-
             </div>
-
 
             <div class="etapa">
                 <h3>Etapa 2</h3>
@@ -353,7 +337,7 @@
 
                         <div class="left-team-info">
                             <div class="team-name">
-                                <div class="portocaliu">
+                                <div class="Portocaliu">
                                     Portocaliu
                                 </div>
                             </div>
@@ -366,11 +350,11 @@
                             </ul>
                         </div>
 
-                        <strong class="scor">0 - 0</strong>
+                        <strong class="scor"></strong>
 
                         <div class="right-team-info">
                             <div class="team-name">
-                                <div class="albastru">
+                                <div class="Albastru">
                                     Albastru
                                 </div>
                             </div>
@@ -391,7 +375,7 @@
 
                         <div class="left-team-info">
                             <div class="team-name">
-                                <div class="gri">
+                                <div class="Gri">
                                     Gri
                                 </div>
                             </div>
@@ -404,11 +388,11 @@
                             </ul>
                         </div>
 
-                        <strong class="scor">0 - 0</strong>
+                        <strong class="scor"></strong>
 
                         <div class="right-team-info">
                             <div class="team-name">
-                                <div class="verde">
+                                <div class="Verde">
                                     Verde
                                 </div>
                             </div>
@@ -433,7 +417,7 @@
 
                         <div class="left-team-info">
                             <div class="team-name">
-                                <div class="verde">
+                                <div class="Verde">
                                     Verde
                                 </div>
                             </div>
@@ -446,17 +430,17 @@
                             </ul>
                         </div>
 
-                        <strong class="scor">0 - 0</strong>
+                        <strong class="scor"></strong>
 
                         <div class="right-team-info">
                             <div class="team-name">
-                                <div class="albastru">
+                                <div class="Albastru">
                                     Albastru
                                 </div>
                             </div>
                             <ul id="marcatori-dreapta">
                                 <li>Cezar</li>
-                                <li>Cezar</li>
+                                <li></li>
                                 <li>Cezar</li>
                                 <li>Cezar</li>
                                 <li>Cezar</li>
@@ -471,8 +455,49 @@
 
                         <div class="left-team-info">
                             <div class="team-name">
-                                <div class="portocaliu">
+                                <div class="Portocaliu">
                                     Portocaliu
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Gri">
+                                    Gri
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <h2>Retur</h2>
+            <div class="etapa" id="etapa4">
+                <h3>Etapa 4</h3>
+
+                <div class="match" id="match7">
+                    <div class="match-info">
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Albastru">
+                                    Albastru
                                 </div>
                             </div>
                             <ul id="marcatori-stanga">
@@ -484,12 +509,131 @@
                             </ul>
                         </div>
 
-                        <strong class="scor">0 - 0</strong>
+                        <strong class="scor"></strong>
 
                         <div class="right-team-info">
                             <div class="team-name">
-                                <div class="gri">
+                                <div class="Verde">
+                                    Verde
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="match" id="match8">
+                <div class="match-info">
+                    <div class="left-team-info">
+                        <div class="team-name">
+                            <div class="Gri">
+                                Gri
+                            </div>
+                        </div>
+                        <ul id="marcatori-stanga">
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                        </ul>
+                    </div>
+
+                    <strong class="scor"></strong>
+
+                    <div class="right-team-info">
+                        <div class="team-name">
+                            <div class="Portocaliu">
+                                Portocaliu
+                            </div>
+                        </div>
+                        <ul id="marcatori-dreapta">
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                            <li>Cezar</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="etapa">
+                <h3>Etapa 5</h3>
+                <div class="match" id="match9">
+                    <div class="match-info">
+
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Verde">
+                                    Verde
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Gri">
                                     Gri
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="match" id="match10">
+                    <div class="match-info">
+
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Albastru">
+                                    Albastru
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Portocaliu">
+                                    Portocaliu
                                 </div>
                             </div>
                             <ul id="marcatori-dreapta">
@@ -506,14 +650,85 @@
             </div>
 
 
+            <div class="etapa">
+                <h3>Etapa 6</h3>
+                <div class="match" id="match11">
+                    <div class="match-info">
+
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Verde">
+                                    Verde
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Portocaliu">
+                                    Portocaliu
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta">
+                                <li>Cezar</li>
+                                <li></li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="match" id="match12">
+                    <div class="match-info">
+
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Gri">
+                                    Gri
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Albastru">
+                                    Albastru
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta">
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                                <li>Cezar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <br>
-
-            <p style="text-align:center;"><a
-                    href="https://mdwab.blogspot.com/2019/05/Table-Football-matches-blogger-css.html">
-                    By: MDW | Mohamed Najiri
-                </a></p>
-
-
     </body>
 
 </html>
@@ -522,67 +737,21 @@
 
 <div class="ptable">
     <h1 class="headin">Clasament</h1>
-    <table id="clasament">
-        <tr class="col">
-            <th>Pozitia</th>
-            <th>ECHIPA</th>
+    <table class="table table-striped">
+        <tr class="bg info">
+            <th>Locul</th>
+            <th>Echipa</th>
             <th>V</th>
             <th>E</th>
             <th>I</th>
-            <th>L</th>
             <th>GD</th>
             <th>GP</th>
             <th>G+/-</th>
             <th>Punctaj</th>
         </tr>
-        <tr class="wpos">
-            <td>Locul 1</td>
-            <td class="nume-echipa">verde</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr class="wpos">
-            <td>Locul 2</td>
-            <td class="nume-echipa">portocaliu</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr class="wpos">
-            <td>Locul 3</td>
-            <td class="nume-echipa">albastru</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr class="wpos">
-            <td>Locul 4</td>
-            <td class="nume-echipa">gri</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <tbody id="clasamentBody">
+
+        </tbody>
     </table>
 </div>
 
@@ -602,6 +771,74 @@
         return count;
     }
 
+
+    var clasament = [
+        {
+            'culoare': 'Verde', 'victorii': 0, 'egaluri': 0, 'infrangeri': 0, 'goluri_date': 0, 'goluri_primite': 0, 'golaveraj': 0, 'punctaj': 0,
+        },
+        {
+            'culoare': `Portocaliu`, 'victorii': 0, 'egaluri': 0, 'infrangeri': 0, 'goluri_date': 0, 'goluri_primite': 0, 'golaveraj': 0, 'punctaj': 0,
+        },
+        {
+            'culoare': `Albastru`, 'victorii': 0, 'egaluri': 0, 'infrangeri': 0, 'goluri_date': 0, 'goluri_primite': 0, 'golaveraj': 0, 'punctaj': 0,
+        },
+        {
+            'culoare': `Gri`, 'victorii': 0, 'egaluri': 0, 'infrangeri': 0, 'goluri_date': 0, 'goluri_primite': 0, 'golaveraj': 0, 'punctaj': 0
+        },
+    ]
+
+    function getMatchInformations(match) {
+        leftTeamName = match.children[0].children[0].children[0].textContent.trim();
+        rightTeamName = match.children[0].children[2].children[0].textContent.trim();
+        score = match.children[0].children[1].textContent
+
+        return [leftTeamName, rightTeamName, score];
+    }
+
+
+    function updateClasament(match) {
+        matchInformations = getMatchInformations(match);
+        leftTeamName = matchInformations[0];
+        rightTeamName = matchInformations[1];
+        score = matchInformations[2];
+
+        scoreInt = score.split('-');
+        leftTeamGoals = parseInt(scoreInt[0]);
+        rightTeamGoals = parseInt(scoreInt[1]);
+
+        leftTeam = getTeam(leftTeamName);
+        rightTeam = getTeam(rightTeamName);
+
+        result = leftTeamGoals - rightTeamGoals;
+
+        leftTeam.goluri_date += leftTeamGoals;
+        leftTeam.goluri_primite += rightTeamGoals;
+        leftTeam.golaveraj = leftTeam.goluri_date - leftTeam.goluri_primite;
+
+        rightTeam.goluri_date += rightTeamGoals;
+        rightTeam.goluri_primite += leftTeamGoals;
+        rightTeam.golaveraj = rightTeam.goluri_date - rightTeam.goluri_primite;
+
+        console.log(result)
+
+        if (result == 0) {
+            leftTeam.egaluri++;
+            rightTeam.egaluri++;
+            leftTeam.punctaj++;
+            rightTeam.punctaj++;
+        } else if (result < 0) {
+            leftTeam.infrangeri++;
+            rightTeam.victorii++;
+            rightTeam.punctaj += 3;
+        } else {
+            leftTeam.victorii++;
+            rightTeam.infrangeri++;
+            leftTeam.punctaj += 3;
+        }
+
+        console.log(leftTeam, rightTeam)
+    }
+
     const matches = document.querySelectorAll('.match');
     matches.forEach(match => {
         const leftTeamGoalsUl = match.querySelector('.left-team-info ul');
@@ -610,57 +847,72 @@
         const leftTeamGoalsCount = countNonNullLi(leftTeamGoalsUl);
         const rightTeamGoalsCount = countNonNullLi(rightTeamGoalsUl);
 
-        console.log('Left Team Goals Count:', leftTeamGoalsCount);
-        console.log('Right Team Goals Count:', rightTeamGoalsCount);
-
         const scoreElement = match.querySelector('.scor');
         scoreElement.textContent = `${leftTeamGoalsCount} - ${rightTeamGoalsCount}`;
 
-        updateTeamColorPoints(match);
 
+        updateClasament(match);
     }, this);
 
-    function getMatchResult(match) {
-        const leftTeamGoalsUl = match.querySelector('.left-team-info ul');
-        const rightTeamGoalsUl = match.querySelector('.right-team-info ul');
 
-        const leftTeamGoalsCount = countNonNullLi(leftTeamGoalsUl);
-        const rightTeamGoalsCount = countNonNullLi(rightTeamGoalsUl);
+    // sort the clasament array by points
+    function sortClasament() {
+        clasament.sort(function (team1, team2) {
+            if (team1.punctaj == team2.punctaj) {
+                if (team1.golaveraj == team2.golaveraj) {
+                    if (team1.goluri_date == team2.goluri_date) {
+                        // TODO 
+                        // add a function to sort by the number of goals scored in the match between the two teams
 
-        if (leftTeamGoalsCount > rightTeamGoalsCount) {
-            return '1';
-        } else if (leftTeamGoalsCount < rightTeamGoalsCount) {
-            return '2';
-        } else {
-            return 'X';
+                        return 0;
+                    } else if (team1.goluri_date > team2.goluri_date) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                } else if (team1.golaveraj > team2.golaveraj) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            } else if (team1.punctaj > team2.punctaj) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+    }
+
+    function getTeam(color) {
+        for (var i = 0; i < clasament.length; i++) {
+            if (clasament[i].culoare == color) {
+                return clasament[i];
+            }
         }
     }
 
-    function updateTeamColorPoints(match) {
-        const matchResult = getMatchResult(match);
+    sortClasament();
 
-        const leftTeamColor = match.querySelector('.left-team-info .team-name div').classList[0];
-        const rightTeamColor = match.querySelector('.right-team-info .team-name div').classList[0];
+    function buildClasament(data) {
+        var table = document.getElementById('clasamentBody');
 
-
-        const numeEchipe = document.getElementsByClassName("nume-echipa");
-
-        for (let i = 0; i < numeEchipe.length; i++) {
-            const numeEchipa = numeEchipe[i].innerText;
-            console.log(numeEchipa);
+        for (var i = 0; i < data.length; i++) {
+            var row = `<tr>
+                            <td>${i + 1}</td>
+                            <td>${data[i].culoare}</td>
+                            <td>${data[i].victorii}</td>
+                            <td>${data[i].egaluri}</td>
+                            <td>${data[i].infrangeri}</td>
+                            <td>${data[i].goluri_date}</td>
+                            <td>${data[i].goluri_primite}</td>
+                            <td>${data[i].golaveraj}</td>
+                            <td>${data[i].punctaj}</td>
+                        </tr>`
+            table.innerHTML += row;
         }
     }
 
-    function updateScore(matchResult, leftTeamColorTd, rightTeamColorTd) {
-        if (matchResult === '1') {
-            leftTeamColorTd.textContent = parseInt(leftTeamColorTd.textContent) + 3;
-        } else if (matchResult === '2') {
-            rightTeamColorTd.textContent = parseInt(rightTeamColorTd.textContent) + 3;
-        } else {
-            leftTeamColorTd.textContent = parseInt(leftTeamColorTd.textContent) + 1;
-            rightTeamColorTd.textContent = parseInt(rightTeamColorTd.textContent) + 1;
-        }
-    }
+    buildClasament(clasament);
 </script>
 
 </body>
