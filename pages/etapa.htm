@@ -645,7 +645,7 @@
                             </div>
                             <ul id="marcatori-dreapta">
                                 <li>Misu</li>
-                                <li></li>
+                                <li>Misu</li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -961,21 +961,21 @@
     function sortClasament() {
         clasament.sort(function (team1, team2) {
             if (team1.punctaj == team2.punctaj) {
-                if (team1.golaveraj == team2.golaveraj) {
-                    if (team1.goluri_date == team2.goluri_date) {
-                        // TODO 
-                        // add a function to sort by the number of goals scored in the match between the two teams
-
-                        return 0;
-                    } else if (team1.goluri_date > team2.goluri_date) {
+                if (getBetterTeamByDirectMatch(team1, team2) == 0) {
+                    if (team1.golaveraj == team2.golaveraj) {
+                        if (team1.goluri_date == team2.goluri_date) {
+                        } else if (team1.goluri_date > team2.goluri_date) {
+                            return -1;
+                        } else {
+                            return 1;
+                        }
+                    } else if (team1.golaveraj > team2.golaveraj) {
                         return -1;
                     } else {
                         return 1;
                     }
-                } else if (team1.golaveraj > team2.golaveraj) {
-                    return -1;
                 } else {
-                    return 1;
+                    return getBetterTeamByDirectMatch(team1, team2);
                 }
             } else if (team1.punctaj > team2.punctaj) {
                 return -1;
@@ -984,6 +984,51 @@
             }
         });
     }
+
+    var clasamentSelectiv = [
+        { 'culoare': 'Verde', 'vs_Portocaliu': 0, 'vs_Albastru': 0, 'vs_Gri': 0 },
+        { 'culoare': 'Portocaliu', 'vs_Verde': 0, 'vs_Albastru': 0, 'vs_Gri': 0 },
+        { 'culoare': 'Gri', 'vs_Portocaliu': 0, 'vs_Albastru': 0, 'vs_Verde': 0 },
+        { 'culoare': 'Albastru', 'vs_Portocaliu': 0, 'vs_Verde': 0, 'vs_Gri': 0 },
+    ]
+
+    // this function get better team from tur and retur
+    function getBetterTeamByDirectMatch(team1, team2) {
+        const matches = document.querySelectorAll('.match');
+        matches.forEach(match => {
+            const matchInformations = getMatchInformations(match);
+            const leftTeamName = matchInformations[0];
+            const rightTeamName = matchInformations[1];
+            const score = matchInformations[2];
+
+            const scoreInt = score.split('-');
+            const leftTeamGoals = parseInt(scoreInt[0]);
+            const rightTeamGoals = parseInt(scoreInt[1]);
+
+            const leftTeam = clasamentSelectiv.find(team => team.culoare === leftTeamName);
+            const rightTeam = clasamentSelectiv.find(team => team.culoare === rightTeamName);
+
+            if (leftTeam && rightTeam) {
+                leftTeam[`vs_${rightTeamName}`] += leftTeamGoals - rightTeamGoals;
+                rightTeam[`vs_${leftTeamName}`] += rightTeamGoals - leftTeamGoals;
+            }
+        }, this)
+
+        const leftTeam = clasamentSelectiv.find(team => team.culoare === leftTeamName);
+        const rightTeam = clasamentSelectiv.find(team => team.culoare === rightTeamName);
+
+        if (leftTeam && rightTeam) {
+            if (leftTeam[`vs_${rightTeamName}`] > rightTeam[`vs_${leftTeamName}`]) {
+                return - 1;
+            } else if (leftTeam[`vs_${rightTeamName}`] < rightTeam[`vs_${leftTeamName}`]) {
+                return 1;
+            } else {
+                return 0
+            }
+        }
+    }
+
+    console.log(clasamentSelectiv)
 
     function getTeam(color) {
         for (var i = 0; i < clasament.length; i++) {
@@ -1030,7 +1075,7 @@
             if (a.indexOf(b) < 0) a.push(b);
             return a;
         }, []);
-        
+
         var marcatoriFinalaArray = []
 
         const marcatoriFinala = document.querySelectorAll('.finala li')
@@ -1041,38 +1086,38 @@
         })
 
         marcatoriUnici
-        .sort(function (marcator1, marcator2) {
-            if (marcatori.filter(marcator => marcator == marcator1).length == marcatori.filter(marcator => marcator == marcator2).length) {
-                if(marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator1)).length == marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator2)).length){
-                    return 0;
-                } else if (marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator1)).length > marcatoriFinalaArray.filter(marcator3 => (marcator2 == marcator2)).length) {
+            .sort(function (marcator1, marcator2) {
+                if (marcatori.filter(marcator => marcator == marcator1).length == marcatori.filter(marcator => marcator == marcator2).length) {
+                    if (marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator1)).length == marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator2)).length) {
+                        return 0;
+                    } else if (marcatoriFinalaArray.filter(marcator3 => (marcator3 == marcator1)).length > marcatoriFinalaArray.filter(marcator3 => (marcator2 == marcator2)).length) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                } else if (marcatori.filter(marcator => marcator == marcator1).length > marcatori.filter(marcator => marcator == marcator2).length) {
                     return -1;
                 } else {
                     return 1;
                 }
-            } else if (marcatori.filter(marcator => marcator == marcator1).length > marcatori.filter(marcator => marcator == marcator2).length) {
-                return -1;
-            } else {
-                return 1;
-            }
-        })
-        .forEach((marcator, index) => {
-            var row = `<tr>
+            })
+            .forEach((marcator, index) => {
+                var row = `<tr>
                             <td>${index + 1}</td>
                             <td>${marcator}</td>
                             <td>${marcatoriFinalaArray.filter(marcator2 => (marcator2 == marcator)).length}</td>
                             <td>${marcatori.filter(marcator2 => marcator2 == marcator).length}</td></td>
                         </tr>`
-            table.innerHTML += row;
-        }, this)
+                table.innerHTML += row;
+            }, this)
     }
 
-    function addFinalsTeam(clasament){
+    function addFinalsTeam(clasament) {
         var finalaMica = document.getElementById('finala-mica');
         var finalaMare = document.getElementById('finala-mare');
 
         echipaStangaFinalaMica = finalaMica.children[0].children[0].children[0]
-        
+
         echipaDreaptaFinalaMica = finalaMica.children[0].children[2].children[0]
 
         echipaStangaFinalaMare = finalaMare.children[0].children[0].children[0]
@@ -1102,7 +1147,6 @@
         const table = document.querySelector('table');
         table.style.marginLeft = 'auto';
         table.style.marginRight = 'auto';
-        
     }
 
     buildClasament(clasament);
