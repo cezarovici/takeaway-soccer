@@ -957,34 +957,6 @@
 
     }, this);
 
-    // sort the clasament array by points
-    function sortClasament() {
-        clasament.sort(function (team1, team2) {
-            if (team1.punctaj == team2.punctaj) {
-                if (getBetterTeamByDirectMatch(team1, team2) == 0) {
-                    if (team1.golaveraj == team2.golaveraj) {
-                        if (team1.goluri_date == team2.goluri_date) {
-                        } else if (team1.goluri_date > team2.goluri_date) {
-                            return -1;
-                        } else {
-                            return 1;
-                        }
-                    } else if (team1.golaveraj > team2.golaveraj) {
-                        return -1;
-                    } else {
-                        return 1;
-                    }
-                } else {
-                    return getBetterTeamByDirectMatch(team1, team2);
-                }
-            } else if (team1.punctaj > team2.punctaj) {
-                return -1;
-            } else {
-                return 1;
-            }
-        });
-    }
-
     var clasamentSelectiv = [
         { 'culoare': 'Verde', 'vs_Portocaliu': 0, 'vs_Albastru': 0, 'vs_Gri': 0 },
         { 'culoare': 'Portocaliu', 'vs_Verde': 0, 'vs_Albastru': 0, 'vs_Gri': 0 },
@@ -1028,8 +1000,6 @@
         }
     }
 
-    console.log(clasamentSelectiv)
-
     function getTeam(color) {
         for (var i = 0; i < clasament.length; i++) {
             if (clasament[i].culoare == color) {
@@ -1037,8 +1007,6 @@
             }
         }
     }
-
-    sortClasament();
 
     function buildClasament(data) {
         var table = document.getElementById('clasamentBody');
@@ -1112,6 +1080,54 @@
             }, this)
     }
 
+    buildClasament(clasament);
+
+    // sort the clasament array by points
+    function sortClasament() {
+        clasament.sort(function (team1, team2) {
+            if (team1.punctaj == team2.punctaj) {
+                if (getBetterTeamByDirectMatch(team1, team2) == 0) {
+                    if (team1.golaveraj == team2.golaveraj) {
+                        if (team1.goluri_date == team2.goluri_date) {
+                            // change table loc with the name PENALTY
+                            const clasament = document.getElementById('clasamentBody');
+                            const rows = clasament.querySelectorAll('tr');
+                            rows.forEach(row => {
+                                const teamName = row.children[1].textContent.trim();
+                                if (teamName === team1.culoare) {
+                                    row.children[0].textContent = 'PENALTY';
+                                    row.children[0].style.color = 'red';
+                                } else if (teamName === team2.culoare) {
+                                    row.children[0].textContent = 'PENALTY';
+                                    row.children[0].style.color = 'red';
+
+                                }
+                            }, this);
+                            return 0;
+                        } else if (team1.goluri_date > team2.goluri_date) {
+                            return -1;
+                        } else {
+                            return 1;
+                        }
+                    } else if (team1.golaveraj > team2.golaveraj) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                } else {
+                    return getBetterTeamByDirectMatch(team1, team2);
+                }
+            } else if (team1.punctaj > team2.punctaj) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+    }
+
+
+    sortClasament();
+
     function addFinalsTeam(clasament) {
         var finalaMica = document.getElementById('finala-mica');
         var finalaMare = document.getElementById('finala-mare');
@@ -1149,7 +1165,6 @@
         table.style.marginRight = 'auto';
     }
 
-    buildClasament(clasament);
     buildGolgheteri()
     addFinalsTeam(clasament);
 </script>
