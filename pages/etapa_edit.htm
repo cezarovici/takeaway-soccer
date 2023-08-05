@@ -216,6 +216,54 @@
                 margin-left: 5px;
                 cursor: pointer;
             }
+
+            
+            input[type="text"] {
+                padding: 5px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 300px;
+            }
+
+            
+            .recomandari {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #fff;
+                max-height: 200px;
+                overflow-y: auto;
+                width: 298px;
+                position: absolute; 
+                z-index: 6; 
+            }
+
+            .recomandari li {
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            .recomandari li:hover {
+                background-color: #f9f9f9;
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007BFF;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+            
         </style>
     </head>
 
@@ -331,9 +379,14 @@
         <div id="turneu">
             <h2>Tur</h2>
             
-            <div class="editie" id="etapa1">
+            <div class="editie etapa" id="etapa1">
                 
                 <h3>Etapa 1</h3>
+
+                <input type="text" id="searchInput1" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(1)">Introdu</button>
+                <ul id="recomandari1" class="recomandari"></ul>
+                
 
                 <div class="match" id="match1">
                     <div class="match-info">
@@ -343,12 +396,8 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Verde">
+                               
                             </ul>
                         </div>
 
@@ -360,58 +409,49 @@
                                     Portocaliu
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Alex Nistor</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Portocaliu">
+                              
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="match" id="match2">
+                    <div class="match-info">
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Albastru">
+                                    Albastru
+                                </div>
+                            </div>
+                            <ul id="marcatori-stanga" class="list-Albastru">
+                                
+                            </ul>
+                        </div>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Gri">
+                                    Gri
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta" class="list-Gri">
+                                
                             </ul>
                         </div>
 
                     </div>
                 </div>
             </div>
-
-            <div class="match" id="match2">
-                <div class="match-info">
-                    <div class="left-team-info">
-                        <div class="team-name">
-                            <div class="Albastru">
-                                Albastru
-                            </div>
-                        </div>
-                        <ul id="marcatori-stanga">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-
-                    <strong class="scor"></strong>
-
-                    <div class="right-team-info">
-                        <div class="team-name">
-                            <div class="Gri">
-                                Gri
-                            </div>
-                        </div>
-                        <ul id="marcatori-dreapta">
-                            <li>Vlad Pintilie</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="etapa">
+            <div class="etapa" id="etapa2">
                 <h3>Etapa 2</h3>
+                <input type="text" id="searchInput2" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(2)">Introdu</button>
+                <ul id="recomandari2" class="recomandari"></ul>
+                
                 <div class="match" id="match3">
                     <div class="match-info">
 
@@ -421,12 +461,8 @@
                                     Portocaliu
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Portocaliu">
+                            
                             </ul>
                         </div>
 
@@ -438,12 +474,8 @@
                                     Albastru
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Deloiu Florin</li>
-                                <li>Zaharia Stefan</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Albastru">
+                                
                             </ul>
                         </div>
 
@@ -459,12 +491,8 @@
                                     Gri
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li>Ciobanu Ciprian</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Gri">
+                                
                             </ul>
                         </div>
 
@@ -476,12 +504,8 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Verde">
+                               
                             </ul>
                         </div>
 
@@ -490,8 +514,12 @@
             </div>
 
 
-            <div class="etapa">
+            <div class="etapa" id="etapa3">
                 <h3>Etapa 3</h3>
+                <input type="text" id="searchInput3" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(3)">Introdu</button>
+                <ul id="recomandari3" class="recomandari"></ul>
+                
                 <div class="match" id="match5">
                     <div class="match-info">
 
@@ -501,12 +529,8 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Verde">
+                               
                             </ul>
                         </div>
 
@@ -518,12 +542,8 @@
                                     Albastru
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Zaharia Stefan</li>
-                                <li>Zaharia Stefan</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Albastru">
+                               
                             </ul>
                         </div>
 
@@ -539,12 +559,8 @@
                                     Portocaliu
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li>Denis Francu</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Portocaliu">
+                                
                             </ul>
                         </div>
 
@@ -556,12 +572,8 @@
                                     Gri
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Zaharia Stefan</li>
-                                <li>Zaharia Stefan</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Gri">
+                                
                             </ul>
                         </div>
 
@@ -569,9 +581,12 @@
                 </div>
             </div>
             <h2>Retur</h2>
-            <div class="etapa" id="editie4">
+            <div class="etapa" id="etapa4">
                 <h3>Etapa 4</h3>
-
+                <input type="text" id="searchInput4" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(4)">Introdu</button>
+                <ul id="recomandari4" class="recomandari"></ul>
+             
                 <div class="match" id="match7">
                     <div class="match-info">
                         <div class="left-team-info">
@@ -580,12 +595,8 @@
                                     Albastru
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li>Gologan Gabi</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Albastru">
+                               
                             </ul>
                         </div>
 
@@ -597,61 +608,53 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Olaru Marian</li>
-                                <li>Zamfir Sebi</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Verde">
+                               
                             </ul>
                         </div>
 
                     </div>
                 </div>
-            </div>
+           
 
-            <div class="match" id="match8">
-                <div class="match-info">
-                    <div class="left-team-info">
-                        <div class="team-name">
-                            <div class="Gri">
-                                Gri
+                <div class="match" id="match8">
+                    <div class="match-info">
+                        <div class="left-team-info">
+                            <div class="team-name">
+                                <div class="Gri">
+                                    Gri
+                                </div>
                             </div>
+                            <ul id="marcatori-stanga" class="list-Gri">
+                                
+                            </ul>
                         </div>
-                        <ul id="marcatori-stanga">
-                            <li>Zaharia Stefan</li>
-                            <li>Zaharia Stefan</li>
-                            <li>Zaharia Stefan</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+
+                        <strong class="scor"></strong>
+
+                        <div class="right-team-info">
+                            <div class="team-name">
+                                <div class="Portocaliu">
+                                    Portocaliu
+                                </div>
+                            </div>
+                            <ul id="marcatori-dreapta" class="list-Portocaliu">
+                            
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <strong class="scor"></strong>
-
-                    <div class="right-team-info">
-                        <div class="team-name">
-                            <div class="Portocaliu">
-                                Portocaliu
-                            </div>
-                        </div>
-                        <ul id="marcatori-dreapta">
-                            <li>Cezar</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
 
                 </div>
-
-
             </div>
 
-
-            <div class="etapa">
+            <div class="etapa" id="etapa5">
                 <h3>Etapa 5</h3>
+                <input type="text" id="searchInput5" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(5)">Introdu</button>
+                <ul id="recomandari5" class="recomandari"></ul>
+                
                 <div class="match" id="match9">
                     <div class="match-info">
 
@@ -661,12 +664,8 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Verde">
+                               
                             </ul>
                         </div>
 
@@ -678,12 +677,8 @@
                                     Gri
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Zaharia Stefan</li>
-                                <li>Zaharia Stefan</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Gri">
+                                
                             </ul>
                         </div>
 
@@ -699,12 +694,8 @@
                                     Albastru
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Albastru">
+                                
                             </ul>
                         </div>
 
@@ -716,12 +707,8 @@
                                     Portocaliu
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Misu</li>
-                                <li>Misu</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Portocaliu">
+                                
                             </ul>
                         </div>
 
@@ -730,8 +717,12 @@
             </div>
 
 
-            <div class="etapa">
+            <div class="etapa" id="etapa6">
                 <h3>Etapa 6</h3>
+                <input type="text" id="searchInput6" placeholder="Introduceți o valoare">
+                <button onclick="addValueToList(6)">Introdu</button>
+                <ul id="recomandari6" class="recomandari"></ul>
+                
                 <div class="match" id="match11">
                     <div class="match-info">
 
@@ -741,12 +732,8 @@
                                     Verde
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Verde">
+                                
                             </ul>
                         </div>
 
@@ -758,12 +745,8 @@
                                     Portocaliu
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Misu</li>
-                                <li>Denis Francu</li>
-                                <li>Misu</li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Portocaliu">
+                                
                             </ul>
                         </div>
 
@@ -779,12 +762,8 @@
                                     Gri
                                 </div>
                             </div>
-                            <ul id="marcatori-stanga">
-                                <li>Ciobanu Ciprian</li>
-                                <li>Zaharia Stefan</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-stanga" class="list-Gri">
+                                
                             </ul>
                         </div>
 
@@ -796,12 +775,8 @@
                                     Albastru
                                 </div>
                             </div>
-                            <ul id="marcatori-dreapta">
-                                <li>Olaru Marian</li>
-                                <li>Deloiu Florin</li>
-                                <li>Deloiu Florin</li>
-                                <li></li>
-                                <li></li>
+                            <ul id="marcatori-dreapta" class="list-Albastru">
+                                
                             </ul>
                         </div>
 
@@ -1524,8 +1499,135 @@
             }
         }
     }
+    
+    function addValueToList(etapa) {
+           
+            var searchValue;
+            switch (etapa) {
+                case 1:
+                    searchValue = document.getElementById("searchInput1").value;
+                    break;
+                case 2:
+                    searchValue = document.getElementById("searchInput2").value;
+                    break;
+                case 3:
+                    searchValue = document.getElementById("searchInput3").value;
+                    break;
+                case 4:
+                    searchValue = document.getElementById("searchInput4").value;
+                    break;
+                case 5:
+                    searchValue = document.getElementById("searchInput5").value;
+                    break;
+                case 6:
+                    searchValue = document.getElementById("searchInput6").value;
+                    break;
+            }
 
-        
+            // search value in dataPlayer
+            for (var i = 0; i < dataPlayer.length; i++) {
+                var matchData = dataPlayer[i];
+                for (var key in matchData) {
+                    if (matchData[key] === searchValue) {
+                       
+                        var listClassName = "list-" + key;
+                        var list = document.querySelector(".etapa#etapa" + etapa + " ul." + listClassName);
+
+                        // lista are 5 elemente?
+                        if (list.children.length < 5) {
+                            var listItem = document.createElement("li");
+                            listItem.textContent = searchValue;
+                            
+                            // delete button
+                            const deleteIcon = document.createElement('i');
+                            deleteIcon.classList.add('fas', 'fa-trash-alt', 'delete-button'); 
+                            
+                            // delete button listener + update score
+                            deleteIcon.addEventListener('click', function() {
+                                list.removeChild(listItem);
+                                updateScoreMatch();
+                            });
+                            listItem.appendChild(deleteIcon);
+                            list.appendChild(listItem);
+                            
+                            updateScoreMatch();
+                        } else {
+                            alert("Lista " + key + " pentru etapa " + etapa + " are deja 5 elemente.");
+                        }
+                        return; 
+                    }
+                }
+            }
+        }
+
+        // afisare recomandari
+        function afiseazaRecomandari(etapa, searchTerm) {
+            var recomandari = [];
+            for (var i = 0; i < dataPlayer.length; i++) {
+                var matchData = dataPlayer[i];
+                for (var key in matchData) {
+                    if (matchData[key].toLowerCase().includes(searchTerm.toLowerCase())) {
+                        recomandari.push(matchData[key]);
+                    }
+                }
+            }
+
+            var recomandariList = document.getElementById("recomandari" + etapa);
+            recomandariList.innerHTML = "";
+            recomandari.forEach(function (recomandare) {
+                var li = document.createElement("li");
+                li.textContent = recomandare;
+                // listener pentru cand apesi pe o obtiune dintr-o lista
+                li.addEventListener("click", function () {
+                    document.getElementById("searchInput" + etapa).value = recomandare;
+                    recomandariList.innerHTML = ""; 
+                });
+                recomandariList.appendChild(li);
+            });
+        }
+
+       
+        function attachInputEvent(etapa) {
+            var searchInput = document.getElementById("searchInput" + etapa);
+            var recomandariList = document.getElementById("recomandari" + etapa);
+
+            // adaugam recomandari pentru input
+            searchInput.addEventListener("input", function () {
+                var searchTerm = this.value;
+                afiseazaRecomandari(etapa, searchTerm);
+            });
+
+            // ascundem lista cand dam click in afara ei
+            document.addEventListener("click", function (event) {
+                var isClickInsideRecomandari = recomandariList.contains(event.target);
+                var isClickInsideInput = searchInput.contains(event.target);
+                if (!isClickInsideRecomandari && !isClickInsideInput) {
+                    recomandariList.innerHTML = ""; 
+                }
+            });
+        }
+
+        for (var etapa = 1; etapa <= 6; etapa++) {
+            attachInputEvent(etapa);
+        }
+
+        // functie care va fii utilizata pentru actualizarea scorului fiecarui meci
+        function updateScoreMatch()
+        {
+            const matches = document.querySelectorAll('.match');
+            matches.forEach(match => {
+                const leftTeamGoalsUl = match.querySelector('.left-team-info ul');
+                const rightTeamGoalsUl = match.querySelector('.right-team-info ul');
+
+                const leftTeamGoalsCount = countNonNullLi(leftTeamGoalsUl);
+                const rightTeamGoalsCount = countNonNullLi(rightTeamGoalsUl);
+
+                const scoreElement = match.querySelector('.scor');
+                scoreElement.textContent = `${leftTeamGoalsCount} - ${rightTeamGoalsCount}`;
+
+                updateClasament(match);
+            }, this);
+        }
 </script>
 </body>
 
