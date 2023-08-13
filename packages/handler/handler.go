@@ -1,11 +1,10 @@
 package handler
 
 import (
+	"encoding/json"
 	"log"
 	"net/http"
-	"strconv"
 
-	"github.com/araddon/dateparse"
 	"github.com/cezarovici/takeaway-soccer/packages/config"
 	"github.com/cezarovici/takeaway-soccer/packages/form"
 	"github.com/cezarovici/takeaway-soccer/packages/model"
@@ -52,14 +51,54 @@ func (m *Repository) HandleAddEditie(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+type jsonResponse struct {
+	Ok      bool   `json:"ok"`
+	Message string `json:"message"`
+}
+
+func (m *Repository) HandleAdaugaEditieJson(w http.ResponseWriter, r *http.Request) {
+	resp := jsonResponse{
+		Ok:      true,
+		Message: "Hello Cezar",
+	}
+
+	out, err := json.MarshalIndent(resp, "", "     ")
+	if err != nil {
+		log.Println(err)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(out)
+
+}
+
 func (m *Repository) PostHandleAddEditie(w http.ResponseWriter, r *http.Request) {
 	err := r.ParseForm()
 	if err != nil {
 		log.Print(err)
 	}
 
-	editie_nr, err := strconv.Atoi(r.Form.Get("numar_editie"))
-	data_nr, err := dateparse.ParseAny(r.Form.Get("data_editie"))
+	informatiiEditie := model.Editie{
+		Data:  r.Form.Get("data_editie"),
+		Numar: r.Form.Get("numar_editie"),
+	}
 
-	log.Print(editie_nr, data_nr)
+	form := form.New(r.PostForm)
+
+	form.Has("data_editie", r)
+	form.Has("numar_editie", r)
+
+	if !form.Valid() {
+		data := make(map[string]interface{})
+		data["informatiiEditie"] = informatiiEditie
+
+		errRendingTemplate := render.RenderTemplate(w, r, "adauga_etapa_page.htm", &model.TemplateData{
+			Form: form,
+			Data: data,
+		})
+		if errRendingTemplate != nil {
+			log.Print(errRendingTemplate)
+		}
+	}
+
 }
