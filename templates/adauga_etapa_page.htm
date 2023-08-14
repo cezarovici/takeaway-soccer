@@ -321,7 +321,7 @@
                 <div class="col-auto">
                     <label for="data_editie">Data editie</label>
                     {{with .Form.Errors.Get "data_editie"}}
-                        <label class="text-danger">{{.}}</label>
+                    <label class="text-danger">{{.}}</label>
                     {{end}}
                     <input type="date" class="form-control" id="data_editie" name="data_editie">
                 </div>
@@ -329,7 +329,7 @@
                     <label for="numar_editie">Numarul editie</label>
                     {{with .Form.Errors.Get "numar_editie"}}
                     <label class="text-danger">{{.}}</label>
-                {{end}}
+                    {{end}}
                     <input type="number" class="form-control" id="numar_editie" name="numar_editie">
                 </div>
                 <div class="col-auto">
@@ -2007,21 +2007,25 @@
             };
 
             fetch('/adauga-editie-json', {
-                method: 'post',
+                method: 'POST',
                 body: JSON.stringify(informatiiEditie),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
             })
                 .then(response => response.text())
                 .then(responseText => console.log(responseText))
                 .catch(error => console.error('Error:', error));
-        
-            console.log(informatiiEditie)
-            }
 
-            const form = document.getElementById("informatiiEtapa")
-            form.addEventListener('submit',(e)=>{
-                e.preventDefault();
-                submitEditieForm()
-            })
+            console.log(informatiiEditie)
+        }
+
+        const form = document.getElementById("informatiiEtapa")
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submitEditieForm()
+        })
 
 
 
