@@ -14,7 +14,7 @@ func routes(app *config.AppConfig) http.Handler {
 
 	mux.Use(SessionLoad)
 	mux.Use(middleware.Recoverer)
-	mux.Use(NoSurf)
+	// mux.Use(NoSurf)
 
 	mux.Get("/", http.HandlerFunc(handler.Repo.HandleHomePage))
 	mux.Get("/adauga-editie", http.HandlerFunc(handler.Repo.HandleAddEditie))
