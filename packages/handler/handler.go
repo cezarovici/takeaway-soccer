@@ -63,6 +63,7 @@ func (m *Repository) HandleAdaugaEditieJson(w http.ResponseWriter, r *http.Reque
 	var model model.Editie
 
 	err := helpers.DecodeJSONBody(w, r, &model)
+	log.Print("JSON decoding error: %s", err)
 	if err != nil {
 		var mr *helpers.MalformedRequest
 		if errors.As(err, &mr) {
