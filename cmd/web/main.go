@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"os"
 	"time"
-
+	"log"
 	"github.com/alexedwards/scs/v2"
 	"github.com/cezarovici/takeaway-soccer/packages/config"
 	"github.com/cezarovici/takeaway-soccer/packages/handler"
@@ -45,6 +45,7 @@ func main() {
 		Handler: routes(&app),
 	}
 
+	log.Printf("Listening on http://localhost:%s", portNumber)
 	err := server.ListenAndServe()
 	if err != nil {
 		os.Exit(2)
