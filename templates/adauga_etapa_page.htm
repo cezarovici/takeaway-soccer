@@ -2002,11 +2002,11 @@
             const numarInput = document.getElementById("numar_editie").value
 
             const informatiiEditie = {
-                data: dateInput,
-                numar: numarInput
-            };
+                data_editie: dateInput,
+                numar_editie: numarInput
+        };
 
-            fetch('/adauga-editie-json', {
+            fetch('http://localhost:8080/adauga-editie-json', {
                 method: 'POST',
                 body: JSON.stringify(informatiiEditie),
                 headers: {

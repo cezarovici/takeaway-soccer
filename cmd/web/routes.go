@@ -18,7 +18,6 @@ func routes(app *config.AppConfig) http.Handler {
 
 	mux.Get("/", http.HandlerFunc(handler.Repo.HandleHomePage))
 	mux.Get("/adauga-editie", http.HandlerFunc(handler.Repo.HandleAddEditie))
-	mux.Post("/adauga-editie", http.HandlerFunc(handler.Repo.PostHandleAddEditie))
 	mux.Post("/adauga-editie-json", http.HandlerFunc(handler.Repo.HandleAdaugaEditieJson))
 
 	fileServer := http.FileServer(http.Dir("./static/"))

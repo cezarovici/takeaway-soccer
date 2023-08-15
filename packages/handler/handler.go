@@ -1,12 +1,14 @@
 package handler
 
 import (
-	"encoding/json"
+	"errors"
+	"fmt"
 	"log"
 	"net/http"
 
 	"github.com/cezarovici/takeaway-soccer/packages/config"
 	"github.com/cezarovici/takeaway-soccer/packages/form"
+	"github.com/cezarovici/takeaway-soccer/packages/helpers"
 	"github.com/cezarovici/takeaway-soccer/packages/model"
 	"github.com/cezarovici/takeaway-soccer/packages/render"
 )
@@ -38,7 +40,7 @@ func (m *Repository) HandleHomePage(w http.ResponseWriter, r *http.Request) {
 		StringMap: stringMap,
 	})
 	if errRendingTemplate != nil {
-		log.Print(errRendingTemplate)
+		log.Println(errRendingTemplate)
 	}
 }
 
@@ -47,7 +49,7 @@ func (m *Repository) HandleAddEditie(w http.ResponseWriter, r *http.Request) {
 		Form: form.New(nil),
 	})
 	if errRendingTemplate != nil {
-		log.Print(errRendingTemplate)
+		log.Println(errRendingTemplate)
 	}
 }
 
@@ -57,26 +59,32 @@ type jsonResponse struct {
 }
 
 func (m *Repository) HandleAdaugaEditieJson(w http.ResponseWriter, r *http.Request) {
-	resp := jsonResponse{
-		Ok:      true,
-		Message: "Hello Cezar",
-	}
 
-	out, err := json.MarshalIndent(resp, "", "     ")
+	var model model.Editie
+
+	err := helpers.DecodeJSONBody(w, r, &model)
 	if err != nil {
-		log.Println(err)
+		var mr *helpers.MalformedRequest
+		if errors.As(err, &mr) {
+			http.Error(w, mr.Msg, mr.Status)
+		} else {
+			log.Print(err.Error())
+			http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+		}
+		return
 	}
 
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(out)
+	fmt.Fprintf(w, "Person: %+v", model)
 
 }
 
 func (m *Repository) PostHandleAddEditie(w http.ResponseWriter, r *http.Request) {
 	err := r.ParseForm()
 	if err != nil {
-		log.Print(err)
+		log.Println(err)
 	}
+
+	log.Println("something")
 
 	informatiiEditie := model.Editie{
 		Data:  r.Form.Get("data_editie"),
@@ -97,7 +105,7 @@ func (m *Repository) PostHandleAddEditie(w http.ResponseWriter, r *http.Request)
 			Data: data,
 		})
 		if errRendingTemplate != nil {
-			log.Print(errRendingTemplate)
+			log.Println(errRendingTemplate)
 		}
 	}
 
