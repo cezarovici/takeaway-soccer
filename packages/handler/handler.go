@@ -59,7 +59,7 @@ type jsonResponse struct {
 }
 
 func (m *Repository) HandleAdaugaEditieJson(w http.ResponseWriter, r *http.Request) {
-
+	log.Print("Hello from github")
 	var model model.Editie
 
 	err := helpers.DecodeJSONBody(w, r, &model)
